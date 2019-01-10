@@ -259,6 +259,16 @@ h3{
   font-family:  $fontSizeMedium;
 }
 
+
+/** home video block **/
+
+.home-video-banner{
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+
 /** hello block **/
 
 .home-hello-block{
@@ -326,9 +336,7 @@ h3{
     width: calc(100% - 425px);
     float: left;
   }
-
 }
-
 .lets-do{
   margin-top: 43px;
   img, span{
@@ -342,6 +350,231 @@ h3{
     vertical-align: -15px;
   }
 }
+
+
+.home-case-row{
+  height: 430px;
+}
+.home-case-col.width-33{
+  width: 33.333%;
+}
+
+.home-case-col.width-67{
+  width: 66.667%;
+}
+.home-case-col{
+  position: relative;
+}
+.home-case-col-img{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.home-case-mask{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 0.1s;
+}
+.home-case-hover{
+  opacity: 0;
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 25px;
+  width: calc(100% - 50px);
+  transition: all 0.1s;
+  h2{
+    font-family: $fontTypeBoldCond;
+    font-size: $fontSizeMedium;
+  }
+  p{
+
+  }
+  span{
+    font-size:  $fontSizeSmall;
+    text-transform: uppercase;
+    font-family:  $fontTypeMedium;
+    display: block;
+    margin-top: 20px;
+  }
+}
+.home-case-col:hover .home-case-mask, .home-case-col:hover .home-case-hover{
+  opacity: 1;
+  transition: all 0.1s;
+}
+.more-cases-col{
+  text-align: center;
+  padding-top: 79px;
+  color: $colorMain;
+  img{
+    display: inline-block;
+    margin-bottom: 35px;
+  }
+  p{
+    font-family:  $fontTypeBoldCond;
+    font-size:  $fontSizeMedium;
+    text-transform: uppercase;
+  }
+}
+
+/** case single **/
+.style-fixed{
+  position: fixed;
+}
+.case-single-wrapper{
+  display: none;
+  padding: 80px 50px 90px 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 1220px;
+  background-color: #ffffff;
+  z-index: 5;
+}
+.case-single-title{
+  padding-bottom: 50px;
+  max-width: 700px;
+  h2{
+    font-size:  $fontSizeBig;
+    font-family:  $fontTypeBoldCond;
+    text-transform: uppercase;
+  }
+  p{
+    margin: 25px 0 30px 0;
+  }
+  .city span{
+    font-family: $fontTypeBoldCond;
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+}
+.case-single-row{
+  margin-bottom: 40px;
+  img{
+    display: block;
+    width: 100%;
+  }
+  p{
+    padding-top: 15px;
+  }
+}
+.case-single-close{
+  position: fixed;
+  top: 70px;
+  left: 500px;
+  font-size:  100px;
+  z-index: 100;
+  cursor: pointer;
+}
+.single-bg-overlay{
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+
+
+/** archive page **/
+
+.header-archive-page{
+  background-color: $colorMain;
+  color: #ffffff;
+}
+.page-breadcrumbs{
+
+}
+.archive-wrapper{
+  padding: 45px 0;
+  background-color: $colorMain;
+  color: #ffffff;
+}
+.page-breadcrumbs{
+  font-family:  $fontTypeBoldCond;
+  span{
+    text-transform: uppercase;
+  }
+}
+.archive-row{
+  margin-bottom: 55px;
+  h2{
+    font-size:  $fontSizeMaxTitle;
+    font-family:  $fontTypeBoldCond;
+    display: inline-block;
+  }
+  .archive-media{
+    display: inline-block;
+    width: 420px;
+    height: 87px;
+    div{
+      width: 50%;
+      float: left;
+      height: 100%;
+      padding-left: 15px;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      p{
+        font-size:  $fontSizeSmall;
+        text-transform: uppercase;
+        display: block;
+      }
+      span{
+        font-size:  $fontSizeSmall;
+        line-height: 100%;
+        display: block;
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** AGENCY PAGE - START **/
 

@@ -166,6 +166,11 @@ a {
   font-size: 16px;
   font-family: 45px; }
 
+/** home video block **/
+.home-video-banner img {
+  display: block;
+  width: 100%; }
+
 /** hello block **/
 .home-hello-block {
   background-color: #043470;
@@ -230,6 +235,180 @@ a {
   .lets-do img {
     margin-right: 20px;
     vertical-align: -15px; }
+
+.home-case-row {
+  height: 430px; }
+
+.home-case-col.width-33 {
+  width: 33.333%; }
+
+.home-case-col.width-67 {
+  width: 66.667%; }
+
+.home-case-col {
+  position: relative; }
+
+.home-case-col-img {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .home-case-col-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.home-case-mask {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.1s; }
+
+.home-case-hover {
+  opacity: 0;
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 25px;
+  width: calc(100% - 50px);
+  transition: all 0.1s; }
+  .home-case-hover h2 {
+    font-family: "FuturaPTCondBold", sans-serif;
+    font-size: 45px; }
+  .home-case-hover span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "FuturaPTMedium", sans-serif;
+    display: block;
+    margin-top: 20px; }
+
+.home-case-col:hover .home-case-mask, .home-case-col:hover .home-case-hover {
+  opacity: 1;
+  transition: all 0.1s; }
+
+.more-cases-col {
+  text-align: center;
+  padding-top: 79px;
+  color: #043470; }
+  .more-cases-col img {
+    display: inline-block;
+    margin-bottom: 35px; }
+  .more-cases-col p {
+    font-family: "FuturaPTCondBold", sans-serif;
+    font-size: 45px;
+    text-transform: uppercase; }
+
+/** case single **/
+.style-fixed {
+  position: fixed; }
+
+.case-single-wrapper {
+  display: none;
+  padding: 80px 50px 90px 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 1220px;
+  background-color: #ffffff;
+  z-index: 5; }
+
+.case-single-title {
+  padding-bottom: 50px;
+  max-width: 700px; }
+  .case-single-title h2 {
+    font-size: 130px;
+    font-family: "FuturaPTCondBold", sans-serif;
+    text-transform: uppercase; }
+  .case-single-title p {
+    margin: 25px 0 30px 0; }
+  .case-single-title .city span {
+    font-family: "FuturaPTCondBold", sans-serif;
+    margin-right: 5px;
+    text-transform: uppercase; }
+
+.case-single-row {
+  margin-bottom: 40px; }
+  .case-single-row img {
+    display: block;
+    width: 100%; }
+  .case-single-row p {
+    padding-top: 15px; }
+
+.case-single-close {
+  position: fixed;
+  top: 70px;
+  left: 500px;
+  font-size: 100px;
+  z-index: 100;
+  cursor: pointer; }
+
+.single-bg-overlay {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none; }
+
+/** archive page **/
+.header-archive-page {
+  background-color: #043470;
+  color: #ffffff; }
+
+.archive-wrapper {
+  padding: 45px 0;
+  background-color: #043470;
+  color: #ffffff; }
+
+.page-breadcrumbs {
+  font-family: "FuturaPTCondBold", sans-serif; }
+  .page-breadcrumbs span {
+    text-transform: uppercase; }
+
+.archive-row {
+  margin-bottom: 55px; }
+  .archive-row h2 {
+    font-size: 130px;
+    font-family: "FuturaPTCondBold", sans-serif;
+    display: inline-block; }
+  .archive-row .archive-media {
+    display: inline-block;
+    width: 420px;
+    height: 87px; }
+    .archive-row .archive-media div {
+      width: 50%;
+      float: left;
+      height: 100%;
+      padding-left: 15px; }
+      .archive-row .archive-media div img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+      .archive-row .archive-media div p {
+        font-size: 16px;
+        text-transform: uppercase;
+        display: block; }
+      .archive-row .archive-media div span {
+        font-size: 16px;
+        line-height: 100%;
+        display: block; }
 
 /** AGENCY PAGE - START **/
 .agency-content h1 {
