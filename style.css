@@ -110,6 +110,17 @@ a {
   display: inline-block;
   text-align: center; }
 
+.breadcrumbs {
+  font-family: "FuturaPTCondBold", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px; }
+  .breadcrumbs a {
+    color: #9dacbf; }
+  .breadcrumbs a:last-child {
+    color: #043470; }
+  .breadcrumbs a:hover {
+    color: #043470; }
+
 /** footer **/
 .footer-row {
   margin-bottom: 70px; }
@@ -208,15 +219,123 @@ a {
 .home-what-we-do-internal-wrapper .right {
   width: calc(100% - 425px);
   float: left; }
-  .home-what-we-do-internal-wrapper .right .lets-do {
-    margin-top: 43px; }
-    .home-what-we-do-internal-wrapper .right .lets-do img, .home-what-we-do-internal-wrapper .right .lets-do span {
-      display: inline-block;
-      font-size: 30px;
+
+.lets-do {
+  margin-top: 43px; }
+  .lets-do img, .lets-do span {
+    display: inline-block;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "FuturaPTCondBold", sans-serif; }
+  .lets-do img {
+    margin-right: 20px;
+    vertical-align: -15px; }
+
+/** AGENCY PAGE - START **/
+.agency-content h1 {
+  font-size: 130px;
+  font-family: "FuturaPTCondBold", sans-serif;
+  text-transform: uppercase;
+  color: #144179;
+  line-height: 0.81;
+  letter-spacing: normal;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 35px; }
+.agency-content img {
+  width: 100%; }
+.agency-content p.main-text {
+  max-width: 82%;
+  text-align: left;
+  font-size: 45px;
+  font-family: "FuturaPTBook", sans-serif;
+  color: #144179;
+  line-height: 1.11;
+  padding-top: 21px;
+  padding-bottom: 55px; }
+.agency-content .agency-descriptions {
+  display: flex;
+  -webkit-flex-flow: row wrap; }
+  .agency-content .agency-descriptions .agency-descriptions-col {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 12% 40px 0; }
+    .agency-content .agency-descriptions .agency-descriptions-col h3 {
+      font-family: "FuturaPTCondBold", sans-serif;
+      font-size: 45px;
+      color: #144179;
+      text-transform: uppercase; }
+    .agency-content .agency-descriptions .agency-descriptions-col p {
+      font-size: 23px;
+      color: #043470;
+      line-height: 1.22; }
+
+.agency-people .agency-people-wrapper {
+  display: flex;
+  -webkit-flex-flow: row wrap; }
+  .agency-people .agency-people-wrapper .agency-people-col {
+    width: 31%;
+    margin-right: 2%;
+    margin-bottom: 55px; }
+    .agency-people .agency-people-wrapper .agency-people-col img {
+      width: 100%; }
+    .agency-people .agency-people-wrapper .agency-people-col .name {
+      font-family: "FuturaPTCondBold", sans-serif;
       text-transform: uppercase;
-      font-family: "FuturaPTCondBold", sans-serif; }
-    .home-what-we-do-internal-wrapper .right .lets-do img {
-      margin-right: 20px;
-      vertical-align: -15px; }
+      font-size: 25px; }
+    .agency-people .agency-people-wrapper .agency-people-col .position {
+      font-family: "FuturaPTCondBold", sans-serif;
+      text-transform: uppercase;
+      font-size: 25px;
+      color: #9dacbf; }
+  .agency-people .agency-people-wrapper .agency-people-col:hover img {
+    transform: rotate(180deg); }
+  .agency-people .agency-people-wrapper .agency-people-col:hover .name {
+    transform: rotate(180deg);
+    text-align: right; }
+  .agency-people .agency-people-wrapper .agency-people-col:nth-child(3n) {
+    margin-right: 0; }
+
+.our-partners {
+  background-color: #144179;
+  width: 100%;
+  padding-top: 350px;
+  margin-top: -300px;
+  padding-bottom: 100px; }
+  .our-partners .title {
+    font-size: 45px;
+    font-family: "FuturaPTBook", sans-serif;
+    color: #fafafa; }
+  .our-partners .logos-wrapper {
+    display: flex;
+    -webkit-flex-flow: row wrap; }
+    .our-partners .logos-wrapper .logos-wrapper-col {
+      width: 25%;
+      box-sizing: border-box;
+      padding: 5%;
+      opacity: 0.8;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+    .our-partners .logos-wrapper .logos-wrapper-col:hover {
+      opacity: 1;
+      transition: 0.2s; }
+  .our-partners .partners-cols {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    padding-top: 120px; }
+    .our-partners .partners-cols .partners-col {
+      color: #fafafa;
+      width: 50%; }
+    .our-partners .partners-cols .text-first {
+      font-size: 45px;
+      font-family: "FuturaPTBook", sans-serif;
+      line-height: 1.11; }
+    .our-partners .partners-cols .text-second {
+      padding-left: 100px; }
+      .our-partners .partners-cols .text-second p {
+        display: block;
+        padding-bottom: 15px; }
+
+/** AGENCY PAGE - END **/
 
 /*# sourceMappingURL=style.css.map */

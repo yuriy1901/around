@@ -37,8 +37,10 @@
 
 /** variables **/
 
+$fontSizeMaxTitle: 130px;
 $fontSizeBig: 130px;
 $fontSizeMedium: 45px;
+$fontSizeUpperBasic: 25px;
 $fontSizeBasic: 23px;
 $fontSizeSmall: 16px;
 $fontTypeMain: 'FuturaPTBook', sans-serif;
@@ -46,7 +48,8 @@ $fontTypeBoldCond: 'FuturaPTCondBold', sans-serif;
 $fontTypeMedium: 'FuturaPTMedium', sans-serif;
 $colorMain: #043470;
 $colorMainLight: #9dacbf;
-
+$colorSecondMain: #144179;
+$colorWhite: #fafafa;
 
 /**general styles  **/
 
@@ -185,7 +188,20 @@ h3{
   text-align: center;
 }
 
-
+.breadcrumbs {
+  font-family: $fontTypeBoldCond;
+  text-transform: uppercase;
+  font-size: $fontSizeUpperBasic;
+  a {
+    color: $colorMainLight;
+  }
+  a:last-child {
+    color: $colorMain;
+  }
+  a:hover {
+    color: $colorMain;
+  }
+}
 
 /** footer **/
 
@@ -309,43 +325,159 @@ h3{
   .right{
     width: calc(100% - 425px);
     float: left;
-    .lets-do{
-      margin-top: 43px;
-      img, span{
-        display: inline-block;
-        font-size:  30px;
-        text-transform: uppercase;
-        font-family:  $fontTypeBoldCond;
-      }
-      img{
-        margin-right: 20px;
-        vertical-align: -15px;
-      }
-
-    }
   }
 
 }
 
+.lets-do{
+  margin-top: 43px;
+  img, span{
+    display: inline-block;
+    font-size:  30px;
+    text-transform: uppercase;
+    font-family:  $fontTypeBoldCond;
+  }
+  img{
+    margin-right: 20px;
+    vertical-align: -15px;
+  }
+}
 
+/** AGENCY PAGE - START **/
 
+.agency-content {
+  h1 {
+    font-size: $fontSizeMaxTitle;
+    font-family: $fontTypeBoldCond;
+    text-transform: uppercase;
+    color: $colorSecondMain;
+    line-height: 0.81;
+    letter-spacing: normal;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+  img {
+    width: 100%;
+  }
+  p.main-text {
+    max-width: 82%;
+    text-align: left;
+    font-size: $fontSizeMedium;
+    font-family: $fontTypeMain;
+    color: $colorSecondMain;
+    line-height: 1.11;
+    padding-top: 21px;
+    padding-bottom: 55px;
+  }
+  .agency-descriptions {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    .agency-descriptions-col {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 12% 40px 0;
+      h3 {
+        font-family: $fontTypeBoldCond;
+        font-size: $fontSizeMedium;
+        color: $colorSecondMain;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: $fontSizeBasic;
+        color: $colorMain;
+        line-height: 1.22;
+      }
+    }
+  }
+}
 
+.agency-people {
+  .agency-people-wrapper {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    .agency-people-col {
+      width: 31%;
+      margin-right: 2%;
+      margin-bottom: 55px;
+      img {
+        width: 100%;
+      }
+      .name {
+        font-family: $fontTypeBoldCond;
+        text-transform: uppercase;
+        font-size: $fontSizeUpperBasic;
+      }
+      .position {
+        font-family: $fontTypeBoldCond;
+        text-transform: uppercase;
+        font-size: $fontSizeUpperBasic;
+        color: $colorMainLight;
+      }
+    }
+    .agency-people-col:hover {
+      img {
+        transform: rotate(180deg);
+      }
+      .name {
+        transform: rotate(180deg);
+        text-align: right;
+      }
+    }
+    .agency-people-col:nth-child(3n) {
+      margin-right: 0; 
+    }
+  }
+}
 
+.our-partners {
+  background-color: $colorSecondMain;
+  width: 100%;
+  padding-top: 350px;
+  margin-top: -300px;
+  padding-bottom: 100px;
+  .title {
+    font-size: $fontSizeMedium;
+    font-family: $fontTypeMain;
+    color: $colorWhite;
+  }
+  .logos-wrapper {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    .logos-wrapper-col {
+      width: 25%;
+      box-sizing: border-box;
+      padding: 5%;
+      opacity: 0.8;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+    .logos-wrapper-col:hover {
+      opacity: 1;
+      transition: 0.2s;
+    }
+  }
+  .partners-cols {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    padding-top: 120px;
+    .partners-col {
+      color: $colorWhite;
+      width: 50%;
+    }
+    .text-first {
+      font-size: $fontSizeMedium;
+      font-family: $fontTypeMain;
+      line-height: 1.11;
+    }
+    .text-second {
+      padding-left: 100px;
+      p {
+        display: block;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/** AGENCY PAGE - END **/
